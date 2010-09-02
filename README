@@ -1,0 +1,24 @@
+== README ==
+
+=== How to use ===
+require 'file_tee'
+
+# sampe 1
+http = Net::HTTP.start("host", port)
+File.open("path_to_write", "w") {|wf|
+  File.open("path_to_read") {|rf|
+    FileTee.open(rf, wf) {|tee|
+      req = Net::HTTP::Post.new("url_to_upload")
+      req.body_stream = tee
+      http.request(req) # In background, write to "path_to_write".
+    }
+  }
+}
+
+# sample 2
+http = Net::HTTP.start("host", port)
+FileTee.open("path_to_read", "path_to_write") {|tee|
+  req = Net::HTTP::Post.new("url_to_upload")
+  req.body_stream = tee
+  http.request(req) # In background, write to "path_to_write".
+}
