@@ -1,5 +1,5 @@
 #
-#   Copyright 2010 Toshiyuki Terashita.
+#   Copyright 2010 Toshiyuki Suzumura.
 #
 #   This file is part of file_tee.
 #
@@ -14,7 +14,7 @@
 #   GNU Lesser General Public License for more details.
 #
 #   You should have received a copy of the GNU Lesser General Public License
-#   along with Castoro.  If not, see <http://www.gnu.org/licenses/>.
+#   along with this software.  If not, see <http://www.gnu.org/licenses/>.
 #
 
 require 'rubygems'
@@ -25,7 +25,7 @@ require 'rake/rdoctask'
 
 spec = Gem::Specification.new do |s|
   s.name = 'file_tee'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.has_rdoc = false
   s.extra_rdoc_files = ['README']
   s.summary = "This is file access utility like 'tee'."
@@ -51,7 +51,7 @@ Rake::RDocTask.new do |rdoc|
   files =['README', 'LICENSE', 'lib/**/*.rb']
   rdoc.rdoc_files.add(files)
   rdoc.main = "README" # page to start on
-  rdoc.title = "castoro-gateway Docs"
+  rdoc.title = "file_tee Docs"
   rdoc.rdoc_dir = 'doc/rdoc' # rdoc output folder
   rdoc.options << '--line-numbers'
 end

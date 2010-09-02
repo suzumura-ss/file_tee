@@ -1,5 +1,5 @@
 #
-#   Copyright 2010 Toshiyuki Terashita.
+#   Copyright 2010 Toshiyuki Suzumura.
 #
 #   This file is part of file_tee.
 #
@@ -14,7 +14,7 @@
 #   GNU Lesser General Public License for more details.
 #
 #   You should have received a copy of the GNU Lesser General Public License
-#   along with Castoro.  If not, see <http://www.gnu.org/licenses/>.
+#   along with this software.  If not, see <http://www.gnu.org/licenses/>.
 #
 
 class FileTee
