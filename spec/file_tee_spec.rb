@@ -1,5 +1,5 @@
 #
-#   Copyright 2010 Toshiyuki Terashita.
+#   Copyright 2010 Toshiyuki Suzumura.
 #
 #   This file is part of file_tee.
 #
